@@ -7,7 +7,7 @@
 html, body{
     height: 100%;
     margin: 0; /* This tells the computer how far from the left hand side of the screen the text will be placed */
-    font-family: 'Lato'; /*<!-- When written this autonatically changes the code to the selected font type which in this case is Lato-->*/
+    font-family: 'Lato' sans-serif; /*<!-- When written this autonatically changes the code to the selected font type which in this case is Lato-->*/
     font-size: 1em; /* changes the size of the font to the set number*/
 }
 
@@ -15,40 +15,59 @@ html, body{
 
     .title{
         color: ivory;
-        font-family: roboto;
+        font-family: "roboto", sans-serif;
         font-variant: small-caps;
 
         width: 100%;
-        height: 40px;
+        height: 60px;
         background-color: rgb(40, 33, 78);
         
   
     }
     .contact{
         color: orange;
-        font-family: monospace;
+        font-family: "monospace", sans-serif;
         font-variant: small-caps;
-        float: right;
-
 
     }
     .about{
         color: green;
-        font-family: monospace;
+        font-family: "monospace", sans-serif;
         font-variant: small-caps;
     }
 
 
-    .quote{
-        color: black;
-        font-size: small;
-        font-family: libre franklin;
-        font-variant: inherit;
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            background-image: linear-gradient(
+                90deg,
+                rgba(255,0,0,0.617),
+                rgba(0,0,255,0.733)
+            );
 
-        width: 50%;
+        color: white;
+        font-size: small;
+        font-family: "libre franklin",sans-serif;
+        font-variant: inherit;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
 
     }
+    .background_vid{
+        position: absolute;
+        z-index:-1;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
 
+/* 
 .flex-container{
     display: flex;
     justify-content: space-around;
@@ -62,4 +81,4 @@ html, body{
     width: 120px;
     height: 40px;
     margin: auto;
-}
+} */
